@@ -1,0 +1,285 @@
+main{
+    padding: 1px 100px 50px 100px;
+}
+
+.filters{
+    display: flex;
+    gap: 20px;
+}
+
+
+.AllFiltersButton{
+    color: #203A72;
+    font-family: 'Montserrat';
+    width: 150px;
+    height: 40px;
+    border: 0;
+}
+
+p{
+    font-family: 'Montserrat';
+    color: #203A72;
+}
+
+.showText{
+    font-weight: 500;
+    margin-top: 7.5px;
+}
+
+.selectCheckboxes{
+    display: grid;
+    grid-template-columns: 120px 110px 160px;
+    column-gap: 10px;
+}
+
+.checkbox-containerSelect{
+    font-family: 'Montserrat';
+    color: #203A72;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.checkbox-container{
+    display: block;
+    font-family: 'Montserrat';
+    color: #203A72;
+    font-weight: 550;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.checkbox-container.bottom{
+    margin-bottom: 20px;
+}
+
+.checkmark{
+    padding-right: 5px;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tbody td {
+    min-height: 100px;
+    height: 100px; /* Enforce height */
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding is included in height */
+}
+
+th{
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+@media (max-width:1700px){
+    th{
+        white-space: normal;
+    }
+}
+
+th:first-child{
+    border-top-left-radius: 10px;
+}
+
+th:last-child{
+    border-top-right-radius: 10px;
+}
+
+th.bottomTable:first-child{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+th.bottomTable:last-child{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+
+td{
+    border: 1px solid #203A72;
+    text-align: left;
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sidebar {
+    height: 800px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.6s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.6s;
+
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+.open-sidebar .sidebar {
+    left: 0;
+}
+
+.dropdown-content {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+}
+
+.dropbox {
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    border-top: 1px solid #e4e4e4;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filterTitle{
+    margin-left: 10px;
+    margin-right: 120px;
+    font-size: 22px;
+    font-weight: 800;
+    padding-left: 6px;
+    color: #203A72;
+}
+
+.Exit{
+    max-width: 35px;
+    max-height: 35px;
+    align-items: right;
+    cursor: pointer;
+}
+
+.FilterTitleText {
+    color: #203A72;
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    align-items: center;
+}
+
+.FilterArrow{
+    background-color: #ffffff;
+    border: 0px;
+    max-width: 35px;
+    max-height: 35px;
+    transition: transform 0.6s;
+}
+
+.FilterArrow.FoP{
+    margin-left: 125px;
+}
+
+.FilterArrow.Geo{
+    margin-left: 135px;
+}
+
+.FilterArrow.SoB{
+    margin-left: 73px;
+}
+
+.FilterArrow.ToB{
+    margin-left: 83px;
+}
+
+.FilterArrow.Ind{
+    margin-left: 159px;
+}
+
+.FilterArrow.Sec{
+    margin-left: 176px;
+}
+
+.FilterArrow.ToR{
+    margin-left: 69px;
+}
+
+.dropdown {
+    margin-left: 20px;
+    display: none;
+}
+
+.dropdown label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999; /* Ensure it sits below the sidebar but above the rest of the content */
+}
+
+body.open-sidebar .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.page-link, .current-page {
+    padding: 8px 12px;
+    margin: 0 4px;
+    text-decoration: none;
+    color: #0073e6;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.page-link:hover {
+    background-color: #e2e2e2;
+}
+
+.current-page {
+    color: #fff;
+    background-color: #0073e6;
+    border: 1px solid #0073e6;
+}
+
+.ellipsis {
+    padding: 8px 12px;
+    color: #555;
+}
+
+.flipped {
+    transform: rotateX(180deg);
+}
+
+

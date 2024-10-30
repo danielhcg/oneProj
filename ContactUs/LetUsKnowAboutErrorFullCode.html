@@ -1,0 +1,252 @@
+{source}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input with Icon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+        
+      label {
+        display: block;
+        font-family: 'Montserrat';
+        margin-bottom: 15px;
+        color: #60A800;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      .input-container {
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .input-container input::placeholder{
+        color: #a5a5a5;
+        font-family: 'Montserrat';
+      }
+
+      .input-container input {
+        padding-left: 50px; /* Adjust the padding to make room for the icon */
+        background-color: #eaeaea;
+        border: 0;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #464646;
+        height: 46px;
+        width: 425px;
+      }
+
+      #resource.input-container input{
+        padding-left: 25px;
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+      }
+
+      #Name.input-container::before {
+        content: "\f007"; /* Unicode for Font Awesome user icon */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #aaa; /* Adjust color as needed */
+      }
+
+      #Email.input-container::before {
+        content: "\2709"; /* Unicode for Font Awesome user icon */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #aaa; /* Adjust color as needed */
+      }
+
+      .input-container2{
+        background-color: #eaeaea;
+        border: 0;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        color:#464646;
+        width: 425px; /* Set width of the text area */
+        height: 100px; /* Set height of the text area */
+        padding: 15px; /* Optional: Add padding for spacing */
+        padding-left: 25px;
+        resize: none; /* Prevent resizing of the text area */
+        line-height: 1.5; /* Optional: Adjust line height */
+        overflow-y: auto; /* Optional: Add scrollbar when content overflows vertically */
+      }
+
+      textarea[type="text"]::placeholder{
+        color: #a5a5a5;
+        font-family: 'Montserrat';
+      }
+
+      textarea[type="text"]:focus{
+        outline: none;
+      }
+
+      .Contact-Form{
+        display: inline;
+        float: right;
+        margin-right: 10%;
+        margin-top: 50px;
+        margin-bottom: 200px;
+      }
+
+      .SendButton {
+        display: inline-block;
+        border: none;
+        background-color: #60A800; /* Original button color */
+        color: white;
+        padding: 6px 60px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-weight: 500; 
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 7.5px; /* Rounded corners */
+        transition: background-color 0.3s, transform 0.1s;
+      }
+
+      .SendButton:hover {
+        background-color: #558C00; /* Darker shade for hover */
+      }
+
+      .SendButton:active {
+        background-color: #4E7E00; /* Darker shade for hover */
+        transform: scale(0.95);
+      }
+
+      .ContactImg-container{
+        display: inline;
+        margin-left: 20%;
+      }
+
+      .ContactImg{
+        margin-top: 100px;
+        width: 500px;
+        height: auto;
+      }
+
+      .checkbox-label{
+        color: #a5a5a5;
+        font-size: 13px;
+        display: inline;
+        padding-left: 5px;
+        cursor: pointer;
+      }
+
+      #WDE.checkbox-container{
+        padding-left: 45px;
+        padding-right: 60px;
+      }
+
+      #CSI.checkbox-container{
+        padding-left: 45px;
+        padding-right: 35px;
+      }
+      #Other.checkbox-container{
+        padding-left: 45px;
+      }
+
+      .checkbox-rows{
+        padding-bottom: 10px;
+      }
+
+      .checkbox-container{
+        display: inline;
+      }
+
+      .checkbox{
+        cursor: pointer;
+      }
+
+      .checkboxTitle{
+        padding-left: 25px;
+        font-family: 'Montserrat';
+        color: #a5a5a5;
+        font-size: 14px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="Feedback">
+        <div class="ContactImg-container">
+            <img src="images/spoterrorgraphic.png#joomlaImage://local-images/spoterrorgraphic.png?width=816&height=293" class="ContactImg">
+        </div>
+        <div class="Contact-Form">
+            <label for="textbox">Report an Error form</label>
+            <div class="input-container" id="Name">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-container" id="Email">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="input-container" id="resource">
+              <input type="text" placeholder="Name of resource with error">
+            </div>
+            <p class="checkboxTitle">Check the error</p>
+            <div>
+              <div class="checkbox-rows" >
+                <div class="checkbox-container" id="WDE">
+                  <input type="checkbox" class="checkbox" id="WDECheckBox"> 
+                  <label class="checkbox-label"  for="WDECheckBox"> 
+                    Website doesn't exist
+                  </label>
+                </div>
+                <div class="checkbox-container">
+                  <input type="checkbox" class="checkbox" id="AIWCheckBox"> 
+                  <label class="checkbox-label" for="AIWCheckBox"> 
+                    Address is wrong
+                  </label>
+                </div>
+              </div>
+              <div class="checkbox-rows">
+                <div class="checkbox-container" id="CSI">
+                  <input type="checkbox" class="checkbox" id="CSICheckBox"> 
+                  <label class="checkbox-label" for="CSICheckBox"> 
+                    Category seems incorrect
+                  </label>
+                </div>
+                <div class="checkbox-container">
+                  <input type="checkbox" class="checkbox" id="MICheckBox">
+                  <label class="checkbox-label" for="MICheckBox">  
+                    Missing information
+                  </label>
+                </div>
+              </div>
+              <div class="checkbox-rows">
+                <div class="checkbox-container" id="Other">
+                  <input type="checkbox" class="checkbox" id="OtherCheckBox"> 
+                  <label class="checkbox-label" for="OtherCheckBox">
+                    Other
+                  </label>
+                </div>
+              </div>
+            <div>
+                <textarea class="input-container2" type="text" placeholder="More information about error"></textarea>
+            </div>
+            <button class="SendButton">Send</button>
+        </div>
+    </div>
+</body>
+</html>
+
+{/source}
+

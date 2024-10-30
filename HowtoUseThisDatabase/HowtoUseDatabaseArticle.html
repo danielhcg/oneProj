@@ -1,0 +1,329 @@
+{source}
+<!DOCTYPE html>
+
+<head>
+  <jdoc:include type="head" />
+  <link rel="stylesheet" href="media/templates/site/cassiopeia/CustomCode/HowToUseDatabasePage/HowToUseDatabaseCSS.css" type="text/css" />
+</head>
+<body>
+    <h1 class="title">How to Use This Database</h1>
+    <p class="subTitle">There are two main ways to use the database</p>
+
+    <div class="FilterSearch">
+        <p class="FilterSearchTitle">1. Filter Search </p>
+        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=6&Itemid=101" class="arrow" id="FS">
+            <button class="arrowButton">
+                <p class="arrowText">&#x279C;</p>
+            </button>
+        </a>
+    </div>
+    <div class="FilterSearchTextBox">
+        <p class="FilterSearchText">To find the resources you are looking for, you can check all the categories and filters we created to find specific resouces.<br>
+            Below are some examples:<br>
+        </p>
+        <ul class="bullet-list">
+            <li>If you want resources on funding for students, you can check "Funding" in the category "Topic of Resource" and "Students" in the <br> 
+                category "Target Audience".
+            </li>
+            <li>If you want to know resources for legal help regarding trademarks that are free of charge; you would check the "Legal assistance:<br> 
+                Intellectual property, Trade marks, Patents" in the "Legal Assistance" category of "Topic of Resouces", as well as "Free" in the <br>
+                category "Free or Paid".
+            </li>
+        </ul>
+        <p class="FilterSearchText">To learn more about each category and options, you can scroll down to our explanations of the categories at "Categorization<br> 
+            of the Resources Info" or click <a  class="hereLink" href="">here</a> for a pamphlet.
+        </p>
+    </div>
+
+    <div class="CuratedQuestions">
+        <p class="CuratedQuestionsTitle">2. Curated Questions Catalog</p>
+        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=24&Itemid=136" class="arrow" id="CQ">
+            <button class="arrowButton">
+                <p class="arrowText">&#x279C;</p>
+            </button>
+        </a>
+    </div>
+    <div class="CuratedQuestionsTextBox">
+        <p class="CuratedQuestionsText">The curated questions catalog provides a list of commonly asked questions (filters) related to a topic.<br>
+            This is a great way to learn more if you don't have a specific question or resource needed in mind.
+        </p>
+    </div>
+
+    <p class="CategorizationTitle">Categorization of the Resouces Info</p>
+
+    <div class="titleBox" id="FoP">
+        <p class="CategoryTitle">Free or Paid</p>
+        <div class="dropdownButton">
+            <img src="images/whitearrowdown.png#joomlaImage://local-images/whitearrowdown.png?width=147&height=114" alt="" class="dropdownButtonimg" onclick="toggleDropdown('dropdown-contentFoP','200px')" >
+        </div>
+    </div>
+    <div class="dropdown-content" id="dropdown-contentFoP">
+        <div class="descriptionBox" id="FoP">
+            <p class="descText">This indicator shows if the resource is free<br>
+                to use, costs money to use, or is a mixture<br>
+                of both
+            </p>
+        </div>
+        <div class="Categories" id="FoP">
+            <p class="CategText">Free<br>Paid</p>
+        </div>
+    </div>
+
+    <div class="titleBox" id="Geo">
+        <p class="CategoryTitle">Geography</p>
+        <div class="dropdownButton" id="Geo">
+            <img src="images/whitearrowdown.png#joomlaImage://local-images/whitearrowdown.png?width=147&height=114" alt="" class="dropdownButtonimg" onclick="toggleDropdown('dropdown-contentGeo','250px')" >
+        </div>
+    </div>
+    <div class="dropdown-content" id="dropdown-contentGeo">
+        <div class="descriptionBox" id="Geo">
+            <p class="descText">Geographical location that an<br>
+                organization/program focuses their work.
+            </p>
+        </div>
+        <div class="Categories" id="Geo">
+            <p class="CategText">Local North County<br>Local San Diego<br>California<br>National<br>International</p>
+        </div>
+    </div>
+
+    <div class="titleBox" id="SBTitle">
+        <p class="CategoryTitle">Stage of Business</p>
+        <div class="dropdownButton" id="SBButton">
+            <img src="images/whitearrowdown.png#joomlaImage://local-images/whitearrowdown.png?width=147&height=114" alt="" class="dropdownButtonimg" onclick="toggleDropdownWide('dropdown-contentSB','245px','SBTitle','SBButton','134px','980px')" >
+        </div>
+    </div>
+    <div class="dropdown-content" id="dropdown-contentSB">
+        <div class="descriptionBox" id="SB">
+            <p class="descText">The stage that a business is in.<p>
+        </div>
+        <div class="Categories" id="SB">
+            <p class="CategText"><span class="terms">Ideation</span> - Entrepreneur has an idea, is trying to implement<br>
+                <span class="terms">Seeding</span> - Business started, selling a bit, still some trial and error in what to do<br>
+                <span class="terms">Establishing</span> - Business started, selling, reached owners expected income - could be income enough for them to sustain themselves or what<br>
+                they were expecting to generate as a side job<br>
+                <span class="terms">Growing</span> - Business is established and generates income for entrepreneur to sustain themselves, entrepreneur is trying to grow their business<br>
+                <span class="terms">Selling/Exiting</span> - Business owner decided either to close the business or sell
+            </p>
+        </div>
+    </div>
+
+    <div class="titleBox" id="ToBTitle">
+        <p class="CategoryTitle">Type of Business</p>
+        <div class="dropdownButton" id="ToBButton">
+            <img src="images/whitearrowdown.png#joomlaImage://local-images/whitearrowdown.png?width=147&height=114" alt="" class="dropdownButtonimg" onclick="toggleDropdownWide('dropdown-contentToB','215px','ToBTitle', 'ToBButton','142px','988px')" >
+        </div>
+    </div>
+    <div class="dropdown-content" id="dropdown-contentToB">
+        <div class="descriptionBox" id="ToB">
+            <p class="descText">The type of business (size, focus, etc.).</p>
+        </div>
+        <div class="Categories" id="ToB">
+            <p class="CategText"><span class="terms">Micorenterprise</span> - Small business that has no brick and mortar location, does not have more than 2 employees that are not family members<br>
+                <span class="terms">Innovation/Tech</span> - High growth business, focused on innovation and/or tech<br>
+                <span class="terms">Main Street</span> - Business that have a brick and mortar location and have more than 2 employees that are not family members<br>
+                <span class="terms">Medium/Large business</span> - Business that are a medium/large size - more than 5 employees<br>
+                <span class="terms">Pop ups/Vendors</span> - Business does popups (sells their products in framers markets and other places but at specific dates)
+            </p>
+      </div>
+    </div>
+
+
+    <div class="titleBox" id="Ind">
+        <p class="CategoryTitle">Industry</p>
+        <div class="dropdownButton" id="Ind">
+            <img src="images/whitearrowdown.png#joomlaImage://local-images/whitearrowdown.png?width=147&height=114" alt="" class="dropdownButtonimg" onclick="toggleDropdown('dropdown-contentInd','350px')" >
+        </div>
+    </div>
+    <div class="dropdown-content" id="dropdown-contentInd">
+        <div class="descriptionBox" id="Ind">
+            <p class="descText"> The type of business the service or<br>
+                company aims to serve.
+            </p>
+        </div>
+        <div class="Categories" id="Ind">
+            <p class="CategText">Tech Indusrty<br>Non-profit Social<br>Sector<br>Government Sector<br>Agricultural<br>Comsumer Goods<br>Retail<br>Entertainment<br>Other Industry</p>
+        </div>
+    </div>
+
+    <div class="titleBox" id="TA">
+        <p class="CategoryTitle">Target Audience</p>
+        <div class="dropdownButton" id="TA">
+            <img src="images/whitearrowdown.png#joomlaImage://local-images/whitearrowdown.png?width=147&height=114" alt="" class="dropdownButtonimg" onclick="toggleDropdown('dropdown-contentTA','425px')" >
+        </div>
+    </div>
+    <div class="dropdown-content" id="dropdown-contentTA">
+        <div class="descriptionBox" id="TA">
+            <p class="descText"> The community the resource is aiming to <br>
+                assist.
+            </p>
+        </div>
+        <div class="Categories" id="TA">
+            <p class="CategText">Veteran<br>Women<br>People with Disabilities<br>Multicultural<br>Black<br>Asian<br>Latin X<br>Immigrants<br>Under privileged (low income)<br>LGBTQ+<br>Veteran Women<br>Student</p>
+        </div>
+    </div>
+
+    <div class="titleBox" id="ToRTitle">
+        <p class="CategoryTitle">Topic of Resource</p>
+        <div class="dropdownButton" id="ToRButton">
+            <img src="images/whitearrowdown.png#joomlaImage://local-images/whitearrowdown.png?width=147&height=114" alt="" class="dropdownButtonimg" onclick="toggleDropdownWide('dropdown-contentToR','2550px','ToRTitle','ToRButton','134px','980px')" >
+        </div>
+    </div>
+    <div class="dropdown-content" id="dropdown-contentToR">
+        <div class="descriptionBox" id="single-line">
+            <p class="descText" id="ToRSingle">
+                <span class="descTerm">Funding </span>-  Resources regarding where to find funds or grants to your business or organization
+            </p>
+        </div>
+        <div class="Categories" id="ToR1">
+            <p class="CategText">
+                <span class="terms">Venture Capital</span> - A sum of money investors commit for investment in early-stage companies<br>
+                <span class="terms">Private Equity Firms</span> - A private equity firm is an investment management company that provides financial backing and makes investments in private<br>
+                equity of startup or operating companies through a variety of loosly affiliated investment strategies including leveraged buyout, venture capital, and<br>
+                growth capital<br>
+                <span class="terms">Angel Investor</span> - An investment form someone that seeks equity in return<br>
+                <span class="terms">Grants</span> - A grant is an amount of money given to a person that does not need to be paid back<br>
+                <span class="terms">Loans</span> - A loan is an amount of money given out that need to be paid back<br>
+                <span class="terms">Crowdfunding</span> - The practice of funding a project or venture by raising many small amounts on money from a large number of people, typically via the<br>
+                internet<br>
+                <span class="terms">Microcredit/Microloans</span> - The lending of small amounts of money at low interest to new businesses<br>
+                <span class="terms">Other Funding</span> - Any other type of funding not included in the other categories
+            </p>
+        </div>
+
+        <div class="descriptionBox" id="double-line">
+            <p class="descText" id="ToRDouble">
+                <span class="descTerm">Financial Information</span> -  Resources that provides you with general information about finances and<br>
+                banking organization
+            </p>
+        </div>
+        <div class="Categories" id="ToR2">
+            <p class="CategText">
+                <span class="terms">Investment Advisor</span> - A person or company that provides advise about securities to their clients<br>
+                <span class="terms">Education: Financial Literacy, Business Plans, Business Cards</span> - Education in these specific fields<br>
+                <span class="terms">Wealth Management</span> - Wealth management or wealth management advisory is an investment advisory service that provides financial management<br>
+                and wealth advisory services to a wide array of clients ranging from affluent to high-net-worth and ultra-high-net-worth indviduals and families<br>
+                <span class="terms">Accounting Assistance</span> - A company or service that helps startups with accounting<br>
+                <span class="terms">Banking</span> - A bank that provides banking services for startups
+            </p>
+        </div>
+
+        <div class="descriptionBox" id="double-line">
+            <p class="descText" id="ToRDouble">
+                <span class="descTerm">Networking </span>-  Places and events that allow entrepreneurs to network with other entrepreneurs as well as<br>
+                funders, universities, clients, etc
+            </p>
+        </div>
+        <div class="Categories" id="ToR3">
+            <p class="CategText">
+                <span class="terms">Meetups</span> - Gatherings where people can meet others interested in the same field or topic<br>
+                <span class="terms">Networking</span> - A company or service that helps people create connections and build relationships with one another
+            </p>
+        </div>
+
+        <div class="descriptionBox" id="single-line">
+            <p class="descText" id="ToRSingle">
+                <span class="descTerm">Incubator/Accelerator</span> - Information about different incubator and acceleerator programs 
+            </p>
+        </div>
+        <div class="Categories" id="ToR4">
+            <p class="CategText">
+                <span class="terms">Accelerator</span> - A program focused on supporting a business from the early-stages of development and providing resources for them<br> 
+                <span class="terms">Incubator</span> - A startup incubator is a collaborative program for start up companies -- usually physically located in one central workspace --  designed to<br>
+                help startups in their infancy succeed by providing workspace, seed funding, mentoring and training
+            </p>
+        </div>
+
+        <div class="descriptionBox" id="double-line">
+            <p class="descText" id="ToRDouble">
+                <span class="descTerm">Mentorship </span>- Resources where you can connect with mentors that can help you launch or develop your<br>
+                orgranization
+            </p>
+        </div>
+        <div class="Categories" id="ToR5">
+            <p class="CategText">
+                <span class="terms">Mentoring</span> - A company that provides a person or group of people to provide guidance to a startup<br>
+                <span class="terms">Startup Advisor</span> - A startup advisor is a specialist with training and experience in a certain sector or industry who provides advice, mentoring, and<br>
+                networking opportunities to startup founders to help startups in their infancy succeed by providing  workspace, seed funding, mentoring and training<br>
+                <span class="terms">Business Counseling</span> - One-onone or group counceling services with prospective business owners tohelp guide them towards their goal
+            </p>
+        </div>
+
+        <div class="descriptionBox" id="double-line">
+            <p class="descText" id="ToRDouble">
+                <span class="descTerm">Education/Training</span> - Resources such as workshops, educational programs, degrees,books, articles,<br>
+                where entrepreneurs can learn more about entrepreneurship  
+            </p>
+        </div>
+        <div class="Categories" id="ToR6">
+            <p class="CategText">
+                <span class="terms">Training</span> - A company that provides training in a certain field<br> 
+                <span class="terms">Article</span> - An article for people to read<br>
+                <span class="terms">Education</span> - A company or service that works to provide business education opportunities to entrepreneurs
+            </p>
+        </div>
+
+        <div class="descriptionBox" id="double-line">
+            <p class="descText" id="ToRDouble">
+                <span class="descTerm">Tech Assistance </span>- Resources about different companies, softwares, and apps that can be useful for<br>
+                businesses
+            </p>
+        </div>
+        <div class="Categories" id="ToR7">
+            <p class="CategText">
+                <span class="terms">Tech Help</span> - A company or service that provides general tech assistance to entrepreneurs<br>
+                <span class="terms">Project Management Software</span> - Software that helps a startup with project management<br>
+                <span class="terms">Website Assistance</span> - A company or service that helps startups with creating or fixing their website<br>
+                <span class="terms">Software</span> - A software that is helpful for entrepreneurs<br>
+                <span class="terms">Mobile & Web App Development</span> - A company or service that helps develop mobile or web apps for a startup<br>
+                <span class="terms">Mobile Form Development</span> - A company or service that helps develop mobile apps for a startup<br>
+                <span class="terms">Cyber Security</span> - A company or service that works to help digitaly secure a business<br>
+                <span class="terms">Website Builder</span> - A software where you can build your own website<br>
+                <span class="terms">Software Development</span> - A company that will develop software for your business
+            </p>
+        </div>
+
+        <div class="descriptionBox" id="triple-line">
+            <p class="descText" id="ToRDouble">
+                <span class="descTerm">General Business Assistance</span> - Resources about different aspects of a business such as marketing, human<br>
+                resources, and supply chain tools and services; certifications for businesses; places to commercialize your<br>
+                products/services; insurances; etc.
+            </p>
+        </div>
+        <div class="Categories" id="ToR8">
+            <p class="CategText">
+                <span class="terms">Mental Health</span> - A resource that helps entrepreneurs with keeping positive mental health<br>
+                <span class="terms">Hiring Assistance</span> - A company or service that helps startups hire employees<br>
+                <span class="terms">Work Space</span> - A space where people can work on their startup<br>
+                <span class="terms">CRO</span> - A contract research organization is a company that provides support to the pharmaceutical, biotechnology, and medical device industries in the<br>
+                form of research services outsourced on a contract basis<br>
+                <span class="terms">Insurance</span> - Insurance programs for startups<br>
+                <span class="terms">General Business Assistance/Services</span> - A company/individual that will help entrepreneurs wwith general business services<br>
+                <span class="terms">Marketing</span> - A company or service that provides marketing services<br>
+                <span class="terms">Supply Chain</span> - A company or service that helps businesses with figuring out their supply chain<br>
+                <span class="terms">Consulting</span> - A person who advises on how to modify, proceed in, or streamline a given process within a specialized field<br>
+                <span class="terms">Commercialization and Marketplaces</span> - Spaces or organizations that help entrepreneurs sell products/services (i.e. farmers markets, popup events, online<br>
+                marketplace, etc)<br>
+                <span class="terms">Certification</span> - A credential that an organization/individual can earn to verify legitmacy and competence in a subject
+            </p>
+        </div>
+
+        <div class="descriptionBox" id="single-line">
+            <p class="descText" id="ToRSingle">
+            <span class="descTerm">Legal Assistance </span>- Any help related with legal matters in a business/nonprofit
+            </p>
+        </div>
+        <div class="Categories" id="ToR9">
+            <p class="CategText">
+            <span class="terms">General Legal Assistance</span> - Legal assistance in general areas of business such as labor, taxes, contracts, etc<br>
+            <span class="terms">Legal Assistance: Intellectual Property, Trademarks, Patents</span> - Legal assistance regarding the name of the business (snd it is taken or not),<br>
+            trademarking, intellectual property<br>
+            <span class="terms">Legal Formation</span> - Legal assistance regarding how to formalize your business, which type of company you should formalize, etc
+            </p>
+        </div>
+
+    </div>
+    <br><br><br><br><br><br><br>
+</body>
+<script src="media/templates/site/cassiopeia/CustomCode/HowToUseDatabasePage/HowToUseDatabaseJS.js" type="text/javascript"></script>
+</html>
+{/source}

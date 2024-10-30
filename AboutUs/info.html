@@ -1,0 +1,172 @@
+{source}
+  <style>
+    .container {
+      position: relative; /* Establishes a containing block for absolute positioning */
+      width: auto;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1320px;
+      height: 734px;
+      background-color: rgba(255,255,255,100); /* Semi-transparent overlay */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      position: relative; /* Stacks normally */
+      width: 1305px;
+      height: 735px;
+      z-index: 1; /* Higher z-index to ensure it appears above other elements with lower z-index */
+    }
+
+    .overlay-content {
+      position: absolute;
+      top: 43%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      z-index: 2; /* Higher z-index to ensure it appears above other elements */
+    }
+
+    .overlay-content-2 {
+      position: absolute;
+      top: 65%;
+      left: 23%;
+      transform: translate(-50%, -50%);
+      z-index: 2; /* Higher z-index to ensure it appears above other elements */
+    }
+
+    .overlay-content-3 {
+      position: absolute;
+      top: 78.1%;
+      left: 83.1%;
+      transform: translate(-50%, -50%);
+      z-index: 2; /* Higher z-index to ensure it appears above other elements */
+    }
+
+    .GoToData {
+      display: inline-block;
+      border: none;
+      background-color: #60A800; /* Original button color */
+      color: white;
+      padding: 7px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Montserrat';
+      font-weight: 500; 
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px; /* Rounded corners */
+      transition: background-color 0.3s, transform 0.1s;
+      }
+
+    .GoToData:hover {
+      background-color: #558C00; /* Darker shade for hover */
+    }
+
+    .GoToData:active {
+      background-color: #4E7E00; /* Darker shade for hover */
+      transform: scale(0.95);
+    }
+
+    .GiveFButton {
+      display: inline-block;
+      border: none;
+      background-color: #60A800; /* Original button color */
+      color: white;
+      padding: 6.5px 30px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px; /* Rounded corners */
+      transition: background-color 0.3s, transform 0.1s;
+    }
+
+    .GiveFButton:hover {
+      background-color: #558C00; /* Darker shade for hover */
+    }
+
+    .GiveFButton:active {
+      background-color: #4E7E00; /* Darker shade for hover */
+      transform: scale(0.95);
+    }
+
+    .meetTButton {
+      display: inline-block;
+      border: none;
+      background-color: #203A72; /* Original button color */
+      color: white;
+      padding: 13px 30px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 19px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s, transform 0.1s;
+      width:245px;
+    }
+
+    .meetTButton:hover {
+      background-color: #2C4E99; /* Darker shade for hover */
+    }
+
+    .meetTButton:active {
+      background-color: #1A2E57; /* Darker shade for hover */
+      transform: scale(0.95);
+    }
+
+
+
+  </style>
+      <div class="container">
+        <div class="content"><img src="images/InfoPage-header.png#joomlaImage://local-images/InfoPage-header.png?width=1920&height=1080"></div>
+        <div class="overlay">
+            <div class="overlay-content">
+                <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=4&Itemid=104">
+                    <button class="GoToData">Go to database</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="content">
+      <img src="images/InfoPage_FeedbackGraphic.png#joomlaImage://local-images/InfoPage_FeedbackGraphic.png?width=1920&height=1080">
+    </div>
+    <div class="overlay">
+      <div class="overlay-content-2">
+        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=21&Itemid=127">
+          <button class="GiveFButton">Give feedback</button>
+        </a>
+      </div>
+      <div class="overlay-content-3">
+        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=7&Itemid=110">
+          <button class="meetTButton">Meet the team 🡄</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+{/source}
+
+
+
+
+
+
+
+

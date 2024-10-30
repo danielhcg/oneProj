@@ -1,0 +1,443 @@
+.com-content-article__body {
+    position: relative;
+    left: var(--left-spacing);
+    max-width: 1200px;
+}
+
+:root {
+    --left-spacing: 10%;
+}
+
+.title {
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 40px;
+    width: 1200px;
+}
+
+.subTitle {
+    color: #203A72;
+    font-family: 'Montserrat';
+    width: 1200px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.FilterSearch {
+    width: 250px;
+    height: 35px;
+}
+
+.FilterSearchTitle {
+    position: relative;
+    display: inline;
+    top: 5px;
+    left: 30px;
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.FilterSearchTextBox {
+    width: 1200px;
+    height: 325px;
+    background-color: #ffffff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.FilterSearchText {
+    position: relative;
+    top: 25px;
+    left: 30px;
+    font-weight: 500;
+    color: #203A72;
+    font-family: 'Montserrat';
+}
+
+.bullet-list {
+    position: relative;
+    top: 25px;
+    left: 80px;
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: #203A72;
+}
+
+.bullet-list li {
+    margin-bottom: 10px;
+}
+
+.hereLink {
+    color: #203A72;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.CuratedQuestions {
+    width: 375px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+.CuratedQuestionsTitle {
+    position: relative;
+    top: 5px;
+    left: 30px;
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.CuratedQuestionsTextBox {
+    width: 860px;
+    height: 100px;
+    background-color: #ffffff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.CuratedQuestionsText {
+    position: relative;
+    top: 25px;
+    left: 30px;
+    font-weight: 500;
+    color: #203A72;
+    font-family: 'Montserrat';
+}
+
+.CategorizationTitle {
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 100px;
+    width: 1200px;
+}
+
+.titleBox {
+    width: 350px;
+    height: 35px;
+    background-color: #203A72;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 30px;
+}
+
+#SBTitle.titleBox {
+    transition: width 0.8s ease-in-out;
+}
+
+#ToBTitle.titleBox {
+    transition: width 0.8s ease-in-out;
+}
+
+#ToRTitle.titleBox {
+    transition: width 0.8s ease-in-out;
+}
+
+.CategoryTitle {
+    position: relative;
+    display: inline;
+    top: 3px;
+    left: 25px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.dropdownButtonimg {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.8s;
+}
+
+.dropdownButton {
+    position: relative;
+    display: inline;
+    left: 185px;
+    top: 2px;
+}
+
+#Geo.dropdownButton {
+    left: 195px;
+}
+
+#SBButton.dropdownButton {
+    left: 134px;
+    transition: left 0.8s ease-in-out;
+}
+
+#ToBButton.dropdownButton {
+    left: 142px;
+    transition: left 0.8s ease-in-out
+}
+
+#Ind.dropdownButton {
+    left: 219px;
+}
+
+#TA.dropdownButton {
+    left: 144px;
+}
+
+#ToRButton {
+    left: 134px;
+    transition: left 0.8s ease-in-out
+}
+
+.flipped {
+    transform: rotateX(180deg);
+}
+
+.dropdown-content {
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out, max-width 0.8s ease-in-out;
+    max-height: 0px;
+    max-width: 350px;
+}
+
+.descriptionBox {
+    background-color: #eaeaea;
+    width: 350px;
+    border-left: 1px solid #203A72;
+    border-right: 1px solid #203A72;
+    border-bottom: 1px solid #203A72;
+}
+
+#FoP.descriptionBox {
+    height: 83px;
+}
+
+#Geo.descriptionBox {
+    height: 60px;
+}
+
+#SB.descriptionBox {
+    height: 45px;
+    width: 1200px;
+}
+
+#ToB.descriptionBox {
+    height: 45px;
+    width: 1200px;
+}
+
+#Ind.descriptionBox {
+    height: 60px;
+}
+
+#TA.descriptionBox {
+    height: 60px;
+}
+
+#single-line.descriptionBox {
+    height: 50px;
+    width: 1200px;
+}
+
+#double-line.descriptionBox {
+    height: 90px;
+    width: 1200px;
+}
+
+#triple-line.descriptionBox {
+    height: 120px;
+    width: 1200px;
+}
+
+.descText {
+    position: relative;
+    left: 25px;
+    top: 10px;
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+#ToRSingle.descText {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#ToRDouble.descText {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    top: 20%;
+}
+
+.descTerm {
+    font-weight: 700;
+}
+
+.CategText {
+    position: relative;
+    left: 25px;
+    top: 10px;
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.terms {
+    color: #203A72;
+    font-weight: 700;
+}
+
+.Categories {
+    background-color: #FFFFFF;
+    width: 350px;
+    border-left: 1px solid #203A72;
+    border-right: 1px solid #203A72;
+    border-bottom: 1px solid #203A72;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#FoP.Categories {
+    height: 85px;
+}
+
+#Geo.Categories {
+    height: 170px;
+}
+
+#SB.Categories {
+    height: 200px;
+    width: 1200px;
+}
+
+#ToB.Categories {
+    height: 170px;
+    width: 1200px;
+}
+
+#Ind.Categories {
+    height: 280px;
+}
+
+#TA.Categories {
+    height: 365px;
+}
+
+#ToR1.Categories {
+    height: 340px;
+    width: 1200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ToR2.Categories {
+    height: 200px;
+    width: 1200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ToR3.Categories {
+    height: 85px;
+    width: 1200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ToR4.Categories {
+    height: 115px;
+    width: 1200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ToR5.Categories {
+    height: 145px;
+    width: 1200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ToR6.Categories {
+    height: 115px;
+    width: 1200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ToR7.Categories {
+    height: 285px;
+    width: 1200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ToR8.Categories {
+    height: 395px;
+    width: 1200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#ToR9.Categories {
+    height: 145px;
+    width: 1200px;
+}
+
+.arrow {
+    position: absolute;
+    display: inline;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+}
+
+#FS.arrow {
+    left: 240px;
+    top: 140px;
+}
+
+#CQ.arrow {
+    left: 425px;
+    top: 530px;
+}
+
+.arrowButton{
+    background-color: #60A800;
+    border: 0;
+    border-radius: 5px;
+    width: 50px;
+    height:30px;
+    color: white;
+    font-weight: 100;
+}
+
+.arrowText{
+    position: relative;
+    bottom: 10px;
+}
+
+.arrow:hover {
+    color: white;
+}

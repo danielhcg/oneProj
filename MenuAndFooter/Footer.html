@@ -1,0 +1,87 @@
+{source}
+
+<style>
+
+    .footerBlock{
+        display: flex;
+        width: 100%;
+        height: 260px;
+    }
+
+    .footer-img {
+        max-width:150px;/* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+        /*margin-left:100px;*/
+    }
+
+    .footer-img2 {
+        max-width: 75px;/* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .copyright-text{
+        color: #203a72;
+        font-family: 'Montserrat';
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .links{
+        display: block;
+        text-decoration: none;
+        width: 150px;
+        margin-left: 10cqi;
+    }
+
+    .links.top{
+        margin-top: 50px;
+    }
+
+    .links:hover .footer-text{
+        color: #60A800;
+    }
+
+    .footer-text{
+        color: #203a72;
+        font-family: 'Montserrat';
+        font-weight:500;
+        text-align: left;
+        width: 150px;
+    }
+
+    .flexItem{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px; 
+    }
+
+</style>
+
+<div class="footerBlock">
+    <div class="flexItem">
+        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=6&Itemid=101">
+            <img src="images/icon-navy.png#joomlaImage://local-images/icon-navy.png?width=1080&height=1080" class="footer-img">
+        </a>
+    </div>
+
+    <div class="flexItem">
+        <br>
+        <br>
+        <a href="">
+            <img src="images/LinkedIn.png#joomlaImage://local-images/LinkedIn.png?width=200&height=200" class="footer-img2">
+        </a>
+        <br><br><br><br>
+        <p class="copyright-text">© 2024, The One Project</p>
+    </div>
+
+    <div class="flexItem" style="display: block;"> 
+        <a  href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=19&Itemid=125" class="links top">
+            <p class="footer-text">Contact Us</p>
+        </a>
+        <a  href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=21&Itemid=127" class="links">
+            <p class="footer-text">Give Feedback</p>
+        </a>
+    </div> 
+</div>
+
+{/source}

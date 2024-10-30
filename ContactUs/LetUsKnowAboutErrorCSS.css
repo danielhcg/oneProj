@@ -1,0 +1,186 @@
+label {
+    display: block;
+    font-family: 'Montserrat';
+    color: #60A800;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.input-container {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+}
+
+#Name-Container.input-container {
+    margin-top: 15px;
+}
+
+.input-container input::placeholder {
+    color: #a5a5a5;
+    font-family: 'Montserrat';
+}
+
+.input-container input {
+    padding-left: 50px;
+    background-color: #eaeaea;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+    height: 46px;
+    width: 425px;
+}
+
+#Resource-Container.input-container input {
+    padding-left: 25px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+#Name-Container.input-container::before {
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #aaa;
+}
+
+#Email-Container.input-container::before {
+    content: "\2709";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #aaa;
+}
+
+.More-Info {
+    background-color: #eaeaea;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+    width: 425px;
+    height: 100px;
+    padding: 15px;
+    padding-left: 25px;
+    resize: none;
+    line-height: 1.5;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+textarea[type="text"]::placeholder {
+    color: #a5a5a5;
+    font-family: 'Montserrat';
+}
+
+textarea[type="text"]:focus {
+    outline: none;
+}
+
+.Contact-Form {
+    display: inline;
+    float: right;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.SendButton {
+    display: inline-block;
+    border: none;
+    background-color: #60A800;
+    color: white;
+    padding: 6px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7.5px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.SendButton:hover {
+    background-color: #558C00;
+}
+
+.SendButton:active {
+    background-color: #4E7E00;
+    transform: scale(0.95);
+}
+
+.ContactImg-container {
+    display: inline;
+    margin-left: 20%;
+}
+
+.ContactImg {
+    margin-top: 100px;
+    width: 500px;
+    height: auto;
+}
+
+.checkbox-label {
+    color: #a5a5a5;
+    font-size: 13px;
+    display: inline;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+#WDE.checkbox-container {
+    padding-left: 45px;
+    padding-right: 60px;
+}
+
+#CSI.checkbox-container {
+    padding-left: 45px;
+    padding-right: 34px;
+}
+
+#Other.checkbox-container {
+    padding-left: 45px;
+}
+
+.checkbox-rows {
+    padding-bottom: 10px;
+}
+
+#Other-Row.checkbox-rows {
+    padding-bottom: 0px;
+}
+
+.checkbox-container {
+    display: inline;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.checkboxTitle {
+    padding-left: 25px;
+    font-family: 'Montserrat';
+    color: #a5a5a5;
+    font-size: 14px;
+}
+
+.error{
+    color: rgb(255, 0, 0);
+}

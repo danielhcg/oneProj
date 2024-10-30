@@ -1,0 +1,207 @@
+{source}
+    <style>
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100px 1fr 100px;
+    }
+
+    .container {
+        position: relative; /* Establishes a containing block for absolute positioning */
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        position: relative; /* Stacks normally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1; /* Higher z-index to ensure it appears above other elements with lower z-index */
+        max-width: 500px;
+        height: auto;
+    }
+
+    .overlay-content {
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Higher z-index to ensure it appears above other elements */
+    }
+
+    .overlay-content-2 {
+        position: absolute;
+        top: 100%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Higher z-index to ensure it appears above other elements */
+    }
+
+    .overlay-content-3 {
+        position: absolute;
+        top: 100%;
+        left: 89%;
+        transform: translate(-50%, -50%);
+        z-index: 2; /* Higher z-index to ensure it appears above other elements */
+    }
+
+    .Team-Title-Text{
+        color:#203a72;
+        font-family: 'Montserrat';
+        text-align: center;
+    }
+
+    .Team-Title{
+        margin-bottom: 4rem;
+    }
+
+    .linkedin-button2{
+        width:  40px;
+        height: auto;
+    }	
+
+    .linkedin-button {
+        display: inline-block;
+        border: none;
+        background-color: #203A72; /* Original button color */
+        color: white;
+        padding: 0px 0px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 1.6em;/*1.7em */
+        height: 1.6em;
+        border-radius: 50%; /* Rounded corners */
+        transition: background-color 0.3s, transform 0.1s;
+    }
+
+    .linkedin-button:hover {
+        background-color: #2C4E99; /* Darker shade for hover */
+    }
+
+    .linkedin-button:active {
+        background-color: #1A2E57; /* Darker shade for hover */
+        transform: scale(0.95);
+    }
+
+</style>
+<body>
+    <div class="grid">
+        <div>1</div>
+        <div>
+            <div class="Team-Title">
+                <h1 class="Team-Title-Text">Meet Our Team</h1>
+            </div>
+            <div class="container">
+                <div class="content">
+                  <img src="images/Paola.png#joomlaImage://local-images/Paola.png?width=1080&height=1080" >
+                  <img src="images/Ahmad.png#joomlaImage://local-images/Ahmad.png?width=500&height=500" >
+                  <img src="images/Carly.png#joomlaImage://local-images/Carly.png?width=1080&height=1080" >
+                </div>
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <a href="https://www.linkedin.com/in/maria-paola-ometto-72914416/">
+                            <button class="linkedin-button">in</button>
+                        </a>
+                    </div>
+                    <div class="overlay-content-2">
+                        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=4&Itemid=104">
+                            <button class="linkedin-button">in</button>
+                        </a>
+                    </div>
+                    <div class="overlay-content-3">
+                        <a href="https://www.linkedin.com/in/carly-offidani-bertrand/">
+                            <button class="linkedin-button">in</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="content">
+                  	<img src="images/Daniel.png#joomlaImage://local-images/Daniel.png?width=1080&height=1080" >
+                  	<img src="images/Bella.png#joomlaImage://local-images/Bella.png?width=1080&height=1080" >
+                  	<img src="images/Matthew.png#joomlaImage://local-images/Matthew.png?width=1080&height=1080" >
+                </div>
+                <div class="overlay">
+                    	<div class="overlay-content">
+                        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=4&Itemid=104">
+                            <button class="linkedin-button">in</button>
+                        </a>
+                    </div>
+                    	<div class="overlay-content-2">
+                        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=4&Itemid=104">
+                            <button class="linkedin-button">in</button>
+                        </a>
+                    </div>
+                    	<div class="overlay-content-3">
+                        <a href="https://www.linkedin.com/in/matthew-andreas/">
+                            <button class="linkedin-button">in</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="content">
+                    <img src="images/Jakob.png#joomlaImage://local-images/Jakob.png?width=500&height=500" >
+                    <img src="images/Kunmi.png#joomlaImage://local-images/Kunmi.png?width=1080&height=1080" >
+                </div>
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=4&Itemid=104">
+                            <button class="linkedin-button">in</button>
+                        </a>
+                            </div>
+                    <div class="overlay-content-2">
+                        <a href="https://cs643.cs.csusm.edu/andre150/index.php?option=com_content&view=article&id=4&Itemid=104">
+                            <button class="linkedin-button">in</button>
+                        </a>
+                    </div>
+                </div>
+                        
+            </div>
+        </div>
+        <div>3</div>
+    </div>
+    
+    </body>
+
+{/source}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+/*Customizes menu items*/
+.container-header .mod-menu {
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.container-header .mod-menu a:hover {
+    color: #60A800;
+}
+
+.footer a:not(.btn):hover,
+.footer a:not(.btn):focus,
+.footer .btn-link:hover,
+.footer .btn-link:focus {
+    color: #60A800;
+}
+
+
+
+.mod-custom.custom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.collapse:not(.show) {
+    display: flex;
+}
+
+@media (width <922px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
+
+ul.mod-menu.mod-menu_dropdown-metismenu.metismenu.mod-list {
+    flex-direction: row;
+    flex: 1;
+    display: flex;
+
+}
+
+.navbar.navbar-expand-lg {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    z-index: 1000
+}
+
+#mod-custom113.mod-custom.custom {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+ul.mm-collapse.mm-show li a:hover {
+    color: #203A72;
+}
+
+.metismenu.mod-menu .metismenu-item.active>a,
+.metismenu.mod-menu .metismenu-item.active>button,
+.metismenu.mod-menu .metismenu-item>a:hover,
+.metismenu.mod-menu .metismenu-item>button:hover {
+    text-decoration: none;
+}
+
+
+.container-footer.footer.full-width {
+    background-image: linear-gradient(135deg, #EAEAEA 0%, #EAEAEA 100%);
+}
+
+.footer .grid-child {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.metismenu.mod-menu .metismenu-item {
+    padding: .5em 2em;
+}
+
+div#maximenuck115 ul.maximenuck {
+    background: #ffffff;
+}
+
+.mod-menu__separator.separator.mm-toggler.mm-toggler-nolink.mm-collapsed {
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.mod-menu__separator.separator.mm-toggler.mm-toggler-nolink.mm-collapsed:hover {
+    color: #60A800;
+}
+
+.mod-menu__separator.separator.mm-toggler.mm-toggler-nolink.mm-collapsed:focus {
+    color: #203A72;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+input,
+button,
+optgroup,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    font-weight: bold;
+    color: #60A800;
+}
+
+.metismenu.mod-menu .mm-toggler {
+    color: #60A800;
+}
+
+body.site.com_content.wrapper-fluid.view-article.no-layout.no-task.itemid-101 {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.metismenu.mod-menu .mm-collapse {
+    color: #EAEAEA;
+    background-color: #7b95b1;
+    font-weight: bold;
+}
+
+.metismenu.mod-menu .parent>ul {
+    color: #EAEAEA;
+}

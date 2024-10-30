@@ -1,0 +1,89 @@
+{source}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input with Icon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="media/templates/site/cassiopeia/CustomCode/ContactUs/LetUsKnowAboutErrorCSS.css" type="text/css">
+</head>
+
+<body>
+    <div class="contactUs">
+        <div class="ContactImg-container">
+            <img src="images/spoterrorgraphic.png#joomlaImage://local-images/spoterrorgraphic.png?width=816&height=293"
+                class="ContactImg">
+        </div>
+        <form class="Contact-Form" id="Contact-Form">
+            <label for="textbox">Report an Error form</label>
+            <div class="input-container" id="Name-Container">
+                <input type="text" placeholder="Name" id="Name">
+            </div>
+            <p class="error" id="Name-Error"></p>
+            <div class="input-container" id="Email-Container">
+                <input type="text" placeholder="Email" id="Email">
+            </div>
+            <p class="error" id="Email-Error"></p>
+            <div class="input-container" id="Resource-Container">
+                <input type="text" placeholder="Name of Resource with error" id="Resource">
+            </div>
+            <p class="error" id="Resource-Error"></p>
+            <p class="checkboxTitle">Check the error</p>
+            <div class="checkbox-rows">
+                <div class="checkbox-container" id="WDE">
+                    <input type="checkbox" class="checkbox" id="WDECheckBox">
+                    <label class="checkbox-label" for="WDECheckBox">
+                        Website doesn't exist
+                    </label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" class="checkbox" id="AIWCheckBox">
+                    <label class="checkbox-label" for="AIWCheckBox">
+                        Address is wrong
+                    </label>
+                </div>
+            </div>
+            <div class="checkbox-rows">
+                <div class="checkbox-container" id="CSI">
+                    <input type="checkbox" class="checkbox" id="CSICheckBox">
+                    <label class="checkbox-label" for="CSICheckBox">
+                        Category seems incorrect
+                    </label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" class="checkbox" id="MICheckBox">
+                    <label class="checkbox-label" for="MICheckBox">
+                        Missing information
+                    </label>
+                </div>
+            </div>
+            <div class="checkbox-rows" id="Other-Row">
+                <div class="checkbox-container" id="Other">
+                    <input type="checkbox" class="checkbox" id="OtherCheckBox">
+                    <label class="checkbox-label" for="OtherCheckBox">
+                        Other
+                    </label>
+                </div>
+            </div>
+            <p class="error" id="checkbox-Error"></p>
+            <div>
+                <textarea class="More-Info" type="text"
+                    placeholder="More information about error" id="moreInfo"></textarea>
+            </div>
+            <p class="error" id="More-Info-Error"></p>
+            <button class="SendButton" type="submit">Send</button>
+        </form>
+    </div>
+
+    <p id="output"></p>
+
+    <script src="media/templates/site/cassiopeia/CustomCode/ContactUs/LetUsKnowAboutErrorJS.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+
+{/source}
